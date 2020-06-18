@@ -1,0 +1,197 @@
+$Cyan: hsl(180, 66%, 49%);
+$DarkViolet: hsl(257, 27%, 26%);
+$Red: hsl(0, 87%, 67%);
+$Gray: hsl(0, 0%, 75%);
+$GrayishViolet: hsl(257, 7%, 63%);
+$VeryDarkBlue: hsl(255, 11%, 22%);
+$VeryDarkViolet: hsl(260, 8%, 14%);
+
+.landingPage-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  .first-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .img-hero {
+      width: 100%;
+      height: 400px;
+      background-image: url('./../../images/illustration-working.svg');
+      background-size: 150%;
+      background-repeat: no-repeat;
+      object-fit: cover;
+    }
+    h1 {
+      color: $VeryDarkBlue;
+      font-weight: 700;
+      font-size: 2.5em;
+      width: 300px;
+      line-height: 1.2em;
+      margin-bottom: 10px;
+    }
+    p {
+      width: 300px;
+      color: $GrayishViolet;
+      font-size: 1em;
+      margin-bottom: 30px;
+    }
+    button {
+      background-color: $Cyan;
+      color: white;
+      border: none;
+      font-weight: 700;
+      font-size: 1.2em;
+      padding: 15px 20px;
+      border-radius: 60px;
+      width: 200px;
+    }
+  }
+  .shortenIt {
+    width: 320px;
+    height: 150px;
+    background-color: $DarkViolet;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 90px 10px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    z-index: 10;
+    background-image: url('./../../images/bg-shorten-mobile.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 80px -40px;
+
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 300px;
+      justify-content: space-around;
+      input {
+        width: 250px;
+        padding: 15px 20px;
+        border-radius: 10px;
+        border: none;
+        &::placeholder {
+          font-size: 1.3em;
+          color: $GrayishViolet;
+          font-weight: 600;
+        }
+      }
+      button {
+        width: 290px;
+        padding: 15px 20px;
+        border-radius: 10px;
+        background-color: $Cyan;
+        color: white;
+        border: none;
+        font-weight: 700;
+        font-size: 1.2em;
+        border: none;
+      }
+    }
+  }
+  .second-section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: hsl(0, 0%, 96%);
+    position: absolute;
+    top: 840px;
+    .line {
+      width: 8px;
+      background-color: $Cyan;
+      height: 50px;
+    }
+    .brand {
+      width: 320px;
+      height: 250px;
+      border-radius: 5px;
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 50px;
+      h3 {
+        margin-top: 70px;
+        margin-bottom: 20px;
+        font-size: 1.3em;
+      }
+      p {
+        width: 280px;
+        text-align: center;
+      }
+
+      .icon {
+        width: 90px;
+        height: 90px;
+        border-radius: 100px;
+        background-color: $DarkViolet;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        top: 320px;
+        justify-content: center;
+        svg {
+          color: $Cyan;
+          font-size: 3.5em;
+        }
+      
+      }
+    }
+
+    .detail {
+      width: 320px;
+      height: 250px;
+      border-radius: 5px;
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 50px;
+      h3 {
+        margin-top: 70px;
+        margin-bottom: 20px;
+        font-size: 1.3em;
+      }
+      p {
+        width: 280px;
+        text-align: center;
+      }
+
+      .icon {
+        width: 90px;
+        height: 90px;
+        border-radius: 100px;
+        background-color: $DarkViolet;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        top: 620px;
+        justify-content: center;
+        svg {
+          color: $Cyan;
+          font-size: 3.5em;
+        }  
+      }
+    }
+    h2 {
+      margin-top: 150px;
+      font-size: 1.8em;
+      margin-bottom: 20px;
+      color: $VeryDarkBlue;
+    }
+    p {
+      width: 300px;
+      color: $GrayishViolet;
+      font-size: 1em;
+      margin-bottom: 30px;
+    }
+  }
+}
